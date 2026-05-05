@@ -3,8 +3,8 @@
 ## 5/4 Robot Chassis Shape
 To begin this project, I considered two main shapes for the robot chassis: 
 
--Rectangular
--Circular 
+- Rectangular
+- Circular 
 
 I initially considered the rectangular shape because, to me, it simply made the most sense. 
 Most of the electronic components are rectangular in shape, and it would be the most space 
