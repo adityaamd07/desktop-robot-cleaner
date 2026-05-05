@@ -18,3 +18,7 @@ autonomous. According to my initial block sketches, the circle should contain en
 and I can definitely find ways to make use of the shape to my advantage. 
 
 **Decision:** Circular Chassis
+
+## 5/5 Chassis Diameter
+I considered a 6 in, 7 in, and 8 in diameter for the robot size. To determine the size that felt right for my desk, I drew a circle of 6, 7, and 8 in diameter on a sheet of paper and look at their relative size compared to my desk. I decided that 7 in would leave enough room for electrical components, while simultaneously allowing for enough manuverability for a desk my size. 
+**Decision:** 7 inch diameter for chassis
