@@ -21,8 +21,10 @@ This phase will involve fully designing and testing my autonomous driving system
 
 **Status:** not started
 
-##Repo Structure: 
-- docs: contains design decisions log
+## Repo Structure: 
+- docs
+    - design_decisions: ALL decisions, big or small, relating to components, design, and overall structure of project
+    - materials purchased: a bill of all things bought for this project in order to keepy tally of budget
 - more to come!
 
 **Current Project Status:** Researching different design choices for sweeping mechanism, and deciding on electrical components. 
