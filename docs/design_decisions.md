@@ -47,6 +47,13 @@ I also briefly considered a 3 wheel design. This would keep the two wheel system
 **Further Questions:**
  - Given that I know what my wheels system looks like, can I begin writing code for driving the robot, assuming manual inputs?
  - I previously decided on an oscillating system to scrub. Where should I place this system? The front? The back?
- - Should I have two levels in my robot, or is one enough for the components I need? 
+ - Should I have two levels in my robot, or is one enough for the components I need?
+
+## Chassis Layout Planning -- 5/14/26
+I worked in MS Paint today to plan out my chassis, working through placing different components in my circular frame. I have arranged a preliminary layout, which can be found docs/sketches. The main thing I wanted to figure out was how to fit in the scrubbing mechanism, and the answer is that I have no answer. I need to decide on a scrubbing mechanism, and come up with sketches before I can go any further. I have some ideas on a way to lower the srubbing mechanism further down below the chassis floor, thus making leaving much more space on the chassis itself for other components. 
+
+No decision made today. Any Further Question mainly revolves around how I am going to design this scrubbing mechanism. 
+
+
 
 
