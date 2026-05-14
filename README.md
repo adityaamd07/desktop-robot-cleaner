@@ -23,8 +23,10 @@ This phase will involve fully designing and testing my autonomous driving system
 
 ## Repo Structure: 
 - docs
-    - design_decisions: ALL decisions, big or small, relating to components, design, and overall structure of project
+    - design_decisions: A log of decisions made throughout this project, including the rationale behind these decisions
     - materials purchased: a bill of all things bought for this project in order to keepy tally of budget
+    - components_list: a list of all components necessary for this project, both purchased and not yet acquired.
+    - current: a planning document to organize tasks I need to accomplish in a given day, and the following days and week
 - more to come!
 
 **Current Project Status:** Researching different design choices for sweeping mechanism, and deciding on electrical components. 
