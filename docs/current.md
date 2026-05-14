@@ -1,3 +1,6 @@
 # Current 
 
 This is a planning doc that I am creating to better understand the amount of time that I have to undertake this project. I plan on updating this every so often to detail what I have accomplished in the past few days, and what I plan to accomplosh in the next few days. I hope to hold myself to a good schedule by doing this. 
+
+## 5/14
+Today, I messed around with the ultrasonic sensor and the DC Motor. I learned much about how to wire these two together, as well as more about the power supply module and connecting external power sources and handling multiple power sources and grounding. I also did a preliminary sketch of the chassis. Tomorrow, and in the coming days, I hope to fully draw and CAD a design for the scrubbing mechanism. I also want to finish the mini project with the ultrasonic sensor that I am doing. Towards the end of this week and the beginning of next week, I want to have most of my components bought and ready, and be working through a full chassis design. 
