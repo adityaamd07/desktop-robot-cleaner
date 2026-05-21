@@ -54,6 +54,16 @@ I worked in MS Paint today to plan out my chassis, working through placing diffe
 
 No decision made today. Any Further Question mainly revolves around how I am going to design this scrubbing mechanism. 
 
+## Scrubbing Mechanism Sketching --5/21/26
+I used a penci, a piece of paper, and a ruler to sketch out and define my mechanism. These sketches are visible in the hardware folder. I worked through many things. Firstly, I decided to use velcro command strips in order to attach the cleaning pads (duster or mop pad) to the mount. This allows for the simplest method of attaching and removing pads. An additional option I considered was using metal strips and magnets, but I was unsure whether the magnetic force would survive the scrubbing mechanism, and decided to go for velcro as the simpler option. I then, using the 7 inch diameter of my robot and the average length of a commmand strip as constraints, drew out my scrubbing mechanism. I decided on a 2.5 inch diameter wheel spinning, as this would allow for 5 inches of linear coverage, according to l = 2r, a governing equation for crank and slider mechanisms. 
+
+Finally, I have decided to use a stepper motor to run the scrubbing mechanism. I initially considered a servo motor, but quickly realized that, for Phase 2 of this project, I will need to precisely move the cleaning pad mount to a certain spot to allow for consistent changing of pads. Thus, I decided to use a stepper motor as that will provide me greater precision that a servo. 
+
+**Decisions**: Velcro linkages between pads and mount, 2.5 inch diameter wheel for crank and slider mechanism, and swapping servo motor with stepper motor
+
+Further Questions:
+- how will I link the pieces in my project together? screws? custom 3d printed joinings? 
+- In my initial sketches, I assumed one velcro piece would be enough. Will this hold to be true? 
 
 
 
