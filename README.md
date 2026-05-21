@@ -23,13 +23,15 @@ This phase will involve fully designing and testing my autonomous driving system
 
 ## Repo Structure: 
 - docs
+    - sketches: a folder of all planning sketches I do for this project. To me, a planning sketch is one that I do simply to view an overall layout. Crucially, it does NOT have any dimensions. 
     - design_decisions: A log of decisions made throughout this project, including the rationale behind these decisions
-    - materials purchased: a bill of all things bought for this project in order to keepy tally of budget
+    - materials purchased: a bill of all things bought for this project in order to keep tally of budget
     - components_list: a list of all components necessary for this project, both purchased and not yet acquired.
     - current: a planning document to organize tasks I need to accomplish in a given day, and the following days and week
+- hardware: Folder for all designs sketches (both on paper and computer drawn), 3D models, and any calculations that needed to be done
 - more to come!
 
-**Current Project Status:** Researching different design choices for sweeping mechanism, and deciding on electrical components. 
+**Current Project Status:** Designing robot chassis, cleaning mechanism, and finalizing components needed to be ordered
 
 
 
