@@ -7,3 +7,6 @@ Today, I messed around with the ultrasonic sensor and the DC Motor. I learned mu
 
 ## 5/21 
 I was truly overwhelmed and was not able to work on this project the last week, which is frustrating. Today, I made great progress in sketching out the cleaning mechanism. Tomorrow and the day after, I hope to fully CAD this design, and hopefully send it to the library 3D printer on Sunday. In the following week, I hope to draw out and CAD the robot chassis, as well as figure out all components I need and get them ordered. My current goal is to have everything I need to assemble phase one of this project by next Sunday. Hopefully I can make this happen.
+
+## 5/26
+My original plan got delayed, but I think thats just something that I should begin to expect. Today, I finished my CAD model of the cleaning mechanism prototype. Tomorrow, I want to finalize and order all of the remaining parts that I will need for the Project. This includes sensors, wheels, motors, and anything else that I cant think of. I will be unable to work on anything with electronics or 3D printing after Jun 6th and up until July 12th due to vacation. I hope to be able to finish Phase 1 before I leave, which will let me design phase two parts over my vacation. 
