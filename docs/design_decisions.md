@@ -65,5 +65,23 @@ Further Questions:
 - how will I link the pieces in my project together? screws? custom 3d printed joinings? 
 - In my initial sketches, I assumed one velcro piece would be enough. Will this hold to be true? 
 
+## Components Update -- 5/29/26
+This is multiple design decisions rolled into one, so I will try an dedicate a few paragraphs, one for each decisions. First,  I decided on the G12 N20 DC motors to drive my robot. Upon research, I discovered that N20 motors are a classic choice for robots, so I decided to use them as a useful starting point for this project. I decided on the G12 N20 motors because this was the type that I found the most documentation for, which is useful when deciding power current requirements. 
+
+I also decided to use the L293D motor driver and the ULN2003 Stepper Motor Driver for my DC and stepper motors respectively. The primary rationale for this decision is that they came with the ELEGOO kit that I ordered and are useful for prototyping. If needed, I will order a different motor driver. It is worth mentioning that, according to my calculations, the L293D driver does not provide enough current for my motors IF both of them stall. Ideally, I would design my system to avoid my motors stalling, but I will note this here and will likely replace the L293D as I move out of prototyping. Additionally, I have decided to use the power supply module given with the ELEGOO kit to regulate power for now. 
+
+Finally, the battery. I first researched and noted the documented voltage and max current values for components that would need to connect to the battery. These values can be found in docs/commponents. By summing the max current values for the stepper motor, both DC motors, and the ESP 32 board, I arrive at 2080 mAh. Because I would like the robot to run for 30 minutes on one charge, I decided on a 1040 mA minimum current requirement. I then applied a 20% buffer (1040/0.8) to bring that number up to 1300 mAh. To be safe, I decided that 1500 mAh should be good for the battery. The DC motors require the largest voltage at 6V, and the VIN pin on the ESP32 is only able to handle up to 12V. To be safe, I decided to go for between the 5-8V range, which should be more than safe for the ESP32. Therefore, I decided to use a 7.4V Lipo Battery. This was one of the cheaper batteries I saw, yet simultaneouly met all of my requirements. 
+
+These decisions ultimately provide a natural power architecture. The battery will connect to three components: The ESP32 VIN, which handles up to 12V, the L293D motor driver, and the power supply module. The power supply module will then power the stepper motor and its driver, both of which require 5V. 
+
+**Decisions:** G12 N20 Motors for driving robot motion, L293D motor driver and the ULN2003 Stepper Motor Driver for DC and stepper motors respectively, power supply module from kit for voltage regulation. 7.4V Lipo Battery with 1500 mAh. Power Architecture has been decided. 
+
+Further Questions:
+ - What size wheels will I need for robot.
+ - How many IR sensors do I truly need?
+ - what is the true ESP32 current draw? My current number is a rough estimate. 
+
+
+
 
 
