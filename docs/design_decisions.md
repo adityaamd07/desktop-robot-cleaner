@@ -81,6 +81,10 @@ Further Questions:
  - How many IR sensors do I truly need?
  - what is the true ESP32 current draw? My current number is a rough estimate. 
 
+## IR Line Sensors Quantity and Placement + Robot Driving Pattern -- 5/29/26
+In order to decide how many IR sensors I needed I first need to decide how my robot is going to move. I quickly decided on a lawnmower style pattern, with only forward motion and pivoting. This is the simplest way I could think of to code the robots motion, and will make planning this project much easier. Therefore, I have decided on 2 IR sensors, one in the very front and one in the very back. When the Robot is moving forward, we will obviously need a sensor in the front to detect when the robot is off the edge. When pivoting, however, the front and back of the robot will travel in a arc around the wheel that has been designated the pivot. Obviously, whatever wheel is pivot will depend on the direction turning, but this means that the front or back will likely move off the desk if close to the edge of the desk. Having these two sensors here will prevent that from happening. 
+
+**Decision:** Lawn Mower Traversal pattern and 2 IR sensors in the front and back for edge detection. 
 
 
 
