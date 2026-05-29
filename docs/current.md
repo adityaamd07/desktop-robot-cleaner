@@ -10,3 +10,6 @@ I was truly overwhelmed and was not able to work on this project the last week, 
 
 ## 5/26
 My original plan got delayed, but I think thats just something that I should begin to expect. Today, I finished my CAD model of the cleaning mechanism prototype. Tomorrow, I want to finalize and order all of the remaining parts that I will need for the Project. This includes sensors, wheels, motors, and anything else that I cant think of. I will be unable to work on anything with electronics or 3D printing after Jun 6th and up until July 12th due to vacation. I hope to be able to finish Phase 1 before I leave, which will let me design phase two parts over my vacation. 
+
+## 5/29
+At my current rate, I will likely not be able to finish Phase 1 before my vacation, which I have made peace with. Today, I finalized all my components except my wheels and the distance detection attatchment that I was thinking about. I also decided on the number and the amount of IR sensors. I made quite a bit of progress today. Moving forward, I want to finalize my cleaning mechanism CAD, and schedule an appointment with the library to have it printed. I also want to figure out the size wheels that I need, and begin designing my robot chassis. 
