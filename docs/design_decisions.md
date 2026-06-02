@@ -86,6 +86,14 @@ In order to decide how many IR sensors I needed I first need to decide how my ro
 
 **Decision:** Lawn Mower Traversal pattern and 2 IR sensors in the front and back for edge detection. 
 
+## Wheel Diameter size  -- 5/31
+After sketching a quick dimensioned paper sketch (visible in docs/sketches folder), I have decided on 3 inch wheels for the drive train of this robot. This decision was made primarly due to an estimated thickness of a swiffer dusting pad. Unfortunately, I do not have access to the actual swiffer pads for the moment, but online estimates ranged from 1.5-2" when fully fluffed. To get the effectiveness of the pad, it will need to be compressed. Thus, I decided to allocate roughly 1" of space below the robot for the pad itself, with 0.5" for the mount to hold the pad.
+
+With 1.5" of space below the robot, I naturally concluded that I needed 3" diameter wheels. I had already planned on keeping the motor housing for the wheels inside the chassis, which would mean that the middle of the wheel would have to be in the chassis, in line with the motor axle. This mean I would need a 1.5" radius wheel to keep the robot 1.5" off the robot. Additionally, I have only ordered 2 wheels for now. I will test using the scrubbing mechanism itself as a third point of support: if this is too unrealiable, I will research and decide to implement a caster wheel.
+
+**Decision:** 3" wheels will be used in drive train system. Will consider caster wheel after first prototype. 
+
+Further Questions: N/A
 
 
 
