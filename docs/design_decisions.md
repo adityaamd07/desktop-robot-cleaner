@@ -95,5 +95,17 @@ With 1.5" of space below the robot, I naturally concluded that I needed 3" diame
 
 Further Questions: N/A
 
+## Wheel Diameter resize + Dust Pad change  -- 6/23
+I've been on vacation for a while, so work on this project has slowed, and I have gotten lax at updating this repo. I've been working on the robot chassis design in my free time, and have since recognized that I simply cannot fit everything in as it stands with 3 inch wheels. With the battery I have chosen and the restraint of a 7 inch diameter, there simply isn't enough space to fit everything in as it stands. Thus, I've decided on downsizing to 2 inch wheels, which will give me roughly 1 inch of ground clearance. I feel comfortable with this due to a recent discovery I have made: swiffer dusting pads. Previously, I was working under the assumption that I would be using large, handheld fluffy dusting pads for my robot. I have since visited target and discovered that swiffer actually makes thinner, dusting pads intended to be put on a mop. With these, I can assume the pad has negligable thickness and not be concerned with fitting a thick pad under my robot. 
+
+**Decision:** 2 inch wheels will be used in the drive train system, and I will be switching to thinner swiffer dusting pads. 
+
+Further Questions:
+ - How will I acquire these new wheels? 3D print or buy new ones?
+ - How will I keep track of the distance that the robot moves? Math or a device?
+ - For this robot to work, I will need both the ultrasonic sensor and the IR line tracker in the front of the robot. How will I reconcile the fact that both these devices need to take up a similar about of space?
+
+
+
 
 

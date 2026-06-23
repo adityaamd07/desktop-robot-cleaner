@@ -1,7 +1,7 @@
 | Component name | Purpose | Quantity needed | Operating Voltage | Max Current Draw |  Dimensions |  Comment | 
 | --- | --- | :---: | :-----: | :--: | -- |  :--- | 
 | ESP32 DevBoard | Microcontroller | 1 | 5-7 | 500 mA (conservative estimate) | 56x28x13 mm | Component included in ELEGOO starter kit | 
-| Ultrasonic sensor | Detect objects directly in front of robot | 1 | 20x43x15 mm | Component included in ELEGOO starter kit. Will likely place one sensor in front of robot, with no need for more ( may change) | 
+| Ultrasonic sensor | Detect objects directly in front of robot | 1 | N/A | N/A | 20x43x15 mm | Component included in ELEGOO starter kit. Will likely place one sensor in front of robot, with no need for more ( may change) | 
 | IR Line Sensor | Detect surface (and lack thereof) underneath robot | 2 | N/A | N/A | 32x14 mm | ordered a pack of 5 as that was lowest amount I could find |  
 | Step Motor 28BJY-48 | Source of Motion for Scubbing Mechanism | 1 | 5V | 240mA (highest estimate) | Component included in ELEGOO starter kit | 
 | ULN2003 Stepper Motor Driver Module | Driver board for Step Motor | 1 | 5V | negligable | Component included in ELEGOO starter kit
