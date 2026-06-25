@@ -105,6 +105,16 @@ Further Questions:
  - How will I keep track of the distance that the robot moves? Math or a device?
  - For this robot to work, I will need both the ultrasonic sensor and the IR line tracker in the front of the robot. How will I reconcile the fact that both these devices need to take up a similar about of space?
 
+ ## Wheel acquisition -- 6/25
+ After some thinking, I have decided to buy wheels online. This is a bit unfortunate because I already bought some 3 inch wheels that are now useless, but I digress. After researching online, I have discovered that the tolerances to make these wheels fit into the the motor are very finnicy for a 3D printer, and that the DC motor I have chosen, G12-N20, already has wheels that you can buy for cheap on amazon. Thus, I am deciding to buy one of these wheels, which I will order soon. Now this does come with a drawback, which is that the only wheels that I can find are 43 mm wheels, which is roughly 1.7 inches. This is slightly smaller than the wheels that I originally wanted, the 2 inch wheels. This will leave me even less ground clearance than I originally intended. I have decided that to work with this, and attempted to make my cleaning mechanism fit in the roughly 0.85 inches of ground clearance I know have. 
+
+ **Decision:** I will purchase my wheels for the drive train. This will shrink my ground clearance, which I have decided to work with. 
+
+ Further Questions:
+ - How should I opt to fit in my cleaning mechanism under the robot now that my space has shrunk. 
+ - How will I make the cleaning pads replacable? 
+ - How should I think about mounting my step motor to the chassis to drive the cleaning mechanism. 
+
 
 
 
