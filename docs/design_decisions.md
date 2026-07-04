@@ -121,6 +121,14 @@ Further Questions:
  **Decision:** Cleaning pad length will (temporarily) be 4x2 in. 
  **Next Steps:** Based on this length, redo all of the math and redesign the cleaning mechanism with the chassis and this new constraint in mind. 
 
+ ## Cleaning Mechanism significant redesign -- 7/4
+ I have had a significant realization while working on measuring out this cleaning mechanism. I kept running into the issue where I was struggling to balance the amount of space I had. with the constraint of the 6.5" chord, I simply could not figure out a way to balance the lengths. This was especially hard due to my realization that, since I am elevating the motor shaft above the floor of the chassis, the length of the slider is NOT simply 2 times the radius, but a little more than that, which would involve a lot of decently complex math to do so, as it introduces an angle of elevation since the crank arm is not perfectly inline with the slider. By using a linkeage system and having the crank and the slider side by side, I simply would have to make the slider so small that the cleaning pad would be hardly oscillating, which to me, defeats the whole purpose of having an oscillating cleaning pad in the first place. 
+
+ This resulted in me researching other ways for me to convert rotational motion into linear motion. I have since arrived at the scotch yoke mechanism. With this mechanism, the crank arm is able to sit perpindicular to the slider, which means that I can place my stepper motor above or below the slit in the floor, where I have signficantly more space than I do right now. This will greatly simplify my design. Best of all, the mechanism uses a simple L = 2r for the slider length, and does not require the complex math that the linkeage system does. 
+
+ **Decision:** Shift from a linkeage system to a scotch yoke system for my cleaning mechanism. 
+ **Further Questions/Steps:** From here, I need to start sketch what this system will look like and dimension it on paper. From there, I can CAD the model and have it ready to be added to the main chassis assembly. 
+
 
 
 
