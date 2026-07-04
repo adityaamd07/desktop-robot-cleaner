@@ -116,9 +116,9 @@ Further Questions:
  - How should I think about mounting my step motor to the chassis to drive the cleaning mechanism. 
 
  ## Cleaning Pad -- 7/4
- Because I have now switched to the thinner dusting pads used on maps, I now have a greater degree of flexibility in deciding the length of the cleaning pad itself. I have decided on a 4x2 inch cleaning pad dimensions, which I will note in my components list. I arrived at this number largely as a reasonable guess to what would a good length be. 8 inches of surface area to clean should certainly be a big enough number for a countertop/desk while still being small for the robot, and this will also make it (roughly) the size of my velcro strips. This makes it so that there is little overhang from my cleaning pad over my velcro strip, which I believe is preferable. 
+ Because I have now switched to the thinner dusting pads used on maps, I now have a greater degree of flexibility in deciding the length of the cleaning pad itself. I have decided on a 4x2 inch cleaning pad dimensions, which I will note in my components list. I arrived at this number largely as a reasonable guess to what would a good length be. 8 inches of surface area to clean should certainly be a big enough number for a countertop/desk while still being small for the robot, and this will also make it (roughly) the size of my velcro strips. This makes it so that there is little overhang from my cleaning pad over my velcro strip, which I believe is preferable. This dimension is very much subject to change as I begin to run the numbers and decide if the mechanism I want to fit is possible. 
 
- **Decision:** Cleaning pad length will be 4x2 in. 
+ **Decision:** Cleaning pad length will (temporarily) be 4x2 in. 
  **Next Steps:** Based on this length, redo all of the math and redesign the cleaning mechanism with the chassis and this new constraint in mind. 
 
 
