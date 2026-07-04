@@ -115,6 +115,13 @@ Further Questions:
  - How will I make the cleaning pads replacable? 
  - How should I think about mounting my step motor to the chassis to drive the cleaning mechanism. 
 
+ ## Cleaning Pad -- 6/27
+ Because I have now switched to the thinner dusting pads used on maps, I now have a greater degree of flexibility in deciding the length of the cleaning pad itself. I have decided on a 4x2 inch cleaning pad dimensions, which I will note in my components list. I arrived at this number largely as a reasonable guess to what would a good length be. 8 inches of surface area to clean should certainly be a big enough number for a countertop/desk while still being small for the robot, and this will also make it (roughly) the size of my velcro strips. This makes it so that there is little overhang from my cleaning pad over my velcro strip, which I believe is preferable. With this resize, I can now firmly decide on the length of travel distance of my "pin/flag" in my cleaning mechanism that uses a crank slider mechanism. 
+
+ I have decided to use place the slit for my crank and slider mechanism 0.85 inches above the center of the robot. This will place it just above my wheels, which, will leave ample space up above for the ultrasonic sensor, IR sensor, cleaning spray, and a castor wheel if I choose (this is looking more likely, but I will leave it open in the air in case). This places it along a 6.5 inch chord of the robot, which means that the full cleaning mechanism will need to travel 6.5-4 = 2.5 inches, or 1.25 inches on either side from center. This therefore, keeps inline with my original design choice of a 1.25 radius wheel for the crank and slider mechanism. This, then implies that I need a minimum 0.625 inch gap from the floor of the chassis to the pivot point. To be safe, I will round this up to 0.64 inches above. I now believe I have enough information to design a proper mount for the step motor and to reconfigure my current cleaning mechanism to fit within the given constraints.
+
+ **Decision:** 4x2 in cleaning pad, and a further decision on the expact placement of the cleaning mechanism and a framework to begin work on the stepper motor mount
+
 
 
 
