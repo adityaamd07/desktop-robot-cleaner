@@ -129,6 +129,13 @@ Further Questions:
  **Decision:** Shift from a linkeage system to a scotch yoke system for my cleaning mechanism. 
  **Further Questions/Steps:** From here, I need to start sketch what this system will look like and dimension it on paper. From there, I can CAD the model and have it ready to be added to the main chassis assembly. 
 
+ ## Step Motor Mount -- 7/6
+ I have just finished designing my Step Motor Mount, which can be found for the time being in hardware/chassis. For the future, I might add a mounts folder in hardware due to the fact that I have design multiple mounts throughout the project. Design for this mount was pretty straight forward, although the main decision here comes at the walls of the mount. The way I have it, the walls are very thin towards side holes for the motor. I worry about structural integrity of the mount with such thin walls, but I have for the time being decided to keep this as the first version and design a different mount later. 
+
+ **Decision:** Use current iteration with thin walls for the Step Motor Mount, and decide in the future whether the mount needs redesigning. 
+ 
+  
+
 
 
 
