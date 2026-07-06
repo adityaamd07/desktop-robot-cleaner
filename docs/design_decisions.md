@@ -133,8 +133,15 @@ Further Questions:
  I have just finished designing my Step Motor Mount, which can be found for the time being in hardware/chassis. For the future, I might add a mounts folder in hardware due to the fact that I have design multiple mounts throughout the project. Design for this mount was pretty straight forward, although the main decision here comes at the walls of the mount. The way I have it, the walls are very thin towards side holes for the motor. I worry about structural integrity of the mount with such thin walls, but I have for the time being decided to keep this as the first version and design a different mount later. 
 
  **Decision:** Use current iteration with thin walls for the Step Motor Mount, and decide in the future whether the mount needs redesigning. 
- 
-  
+
+ ## Cleaning Mechanism decisions -- 7/6
+ Two decisions to report here after doing CAD on the new cleaning mechanism. The first is relating to the "crank arm" of the mechanism. I have decided to use a circle attached to the motor shaft for this project, because I deemed it simpler to design while getting full functionality. I worried particularly about accidentally designing an arm too small and thing that would snap, and with a circle, the chances of that happening dwindle significantly. On a practical note, using a circle made it easier to see the amount of space the mechanism would be taking place, rather than a single arm where I would have to visualize its path through one shaft rotation. Additionally, I have decided on a crank radius of 1 inch, for roughly 2 inches of travel. 
+
+ The second relates to the crank pin. I initially considered designing and 3D printing a dowel that would fit into the circle, and thus be used to shift the cleaning pad as the wheel turned. I worry, however, that the plastic on plastic friction will degrade the dowel, and make the mechanism fail over time. I have thus decided to use a a steel rod as a dowel, that I will cut to length. Plastic on metal should result in a much smoother glide, and importantly, should not seriously degrade the plastic over time. 
+
+ **Decisions:** 2 inch Circle with steel rod pin for the crank arm. 
+
+ **Further Question:** What size steel rod should I use for the pin, and will choosing to do this increase my costs severely? 
 
 
 
