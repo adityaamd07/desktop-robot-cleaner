@@ -143,6 +143,15 @@ Further Questions:
 
  **Further Question:** What size steel rod should I use for the pin, and will choosing to do this increase my costs severely? 
 
+## Cleaning Mechanism Decisions  -- 7/7 
+Today, I have finished my second version of the cleaning mechanism, which is very exciting. One of the decisions I arrived at today was deciding the size of the steel dowel I will use. For simplicity, I will 3mm dowel, as I found multiple 3mm steel rods for relatively cheap on Amazon. 
+
+Additionally, I must begin to consider the actual attachment of the cleaning pad. For this, I was considering designing a piece that will hold a velcro strip that the cleaning pad will attach to, and then towards the top of that piece, a place to put an adhesive magnet. The main reason I want to use magnets to attach the final piece holding cleaning pad is ease of transfer. By using a magnet, replacing the cleaning pad becomes as easy as peeling off the final piece, rather than unscrewing a part of flipping the whole robot over. Even better, I know observationally that it is decently difficult to slide two magnets off of each other, but relatively easy to peel them off. This means that the piece should not slide off during the lateral motion of cleaning. 
+
+**Decision:** 3mm steel dowel for crank pin, and using magnets to attach the piece holding the cleaning pad for the cleaning mechanism. 
+
+**Further Steps:** Begin deciding on electrical component placement, design the last mounts, and research the materials necessary for a sanitizing pump. 
+
 
 
 
