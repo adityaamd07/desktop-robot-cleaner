@@ -152,6 +152,18 @@ Additionally, I must begin to consider the actual attachment of the cleaning pad
 
 **Further Steps:** Begin deciding on electrical component placement, design the last mounts, and research the materials necessary for a sanitizing pump. 
 
+## Project Scope Redefining -- 7/7
+As I continue to work through this project, I begin to realize that the scope of this project is vast, far vaster than I originally intended. And while I think much of the complexity of this robot is good, I do believe that a certain aspect of the project is needlessly complicated: the stage two pad swap. 
+
+Originally, I determined the need for a two phase system based on the fear of smearing. Basically, that if I straight away sprayed a sanitizing solution and scrubbed back and forth, the debris and dirt would simply smear on the surface rather than be properly collected. I have since decided that this is no longer a worry. A desktop is many scales smaller than a floor: I'm betting that the volume of debris is proportionally scaled down as well, enough to where smearing is a nominal issue.
+
+This also helps my project timeline, as it reduces the number of subsystems I need to design, and focuses in on the core of the project: an autonomous desktop vehicle that fully traverses a desktop/countertop. I am therefore redifining the project as follows:
+
+The project is a desktop sweeper and sanitizer, that travels the area of the desk and simultaneously sweeps and sanitizes it using a scrubbing cleaning pad and sanitizing spray. Phase one of the project involves creating the robot with the cleaning mechanism and spray, and being able to control the robot through bluetooth commands. Phase 2 of the robots will involve making the robot fully clean any square or rectangular surface autonomously. I hope for this redefinition to realign my goals and better narrow the scope of this project. 
+
+**Decision:** Eliminate the prior phase 2 pad swapping, and focus purely on making an autonomous robot that sweeps and sanitizes the surface in one pass. 
+
+**Further Questions:** Is my bet right, or will smearing occur with only one pass through?
 
 
 
