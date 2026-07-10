@@ -165,5 +165,32 @@ The project is a desktop sweeper and sanitizer, that travels the area of the des
 
 **Further Questions:** Is my bet right, or will smearing occur with only one pass through?
 
+## Sanitizer Decisions -- 7/9
+
+**DECISION ONE: SETUP TYPE**
+Now that I have finished my first design of the cleaning mechanism and am ready for testing the physical model of it, I have turned my attention to the santizing system. I first researched the different types of pumps used and found two main setups for hobby projects like mine: a submersible DC pump, or a external peristaltic pump. I have chosen to use the submerisble DC pump, for a few reasons. Because this is my first project that I am attempting, I am foing my best when possible to choose the simpler option, and the DC pump, according to my own research, is the simpler choice to implement. Additionally, I found that it is cheaper to set up and more space efficient, since it combines the pump and liquid resevoir together. 
+
+**Decision:** Submersible DC pump will be used to drive sanitizing mechanism
+
+**DECISION TWO: RESEVOIR SIZE AND TYPE**
+Now that I have decided the pump set up, I now bring my attention to the resevoir. From my own research, I estimated that the average spray nozzle releases roughly 1 ml of liquid per squirt on the medium range. From my 5/29 decision, I have decided on a lawn mower style traversal pattern, and I am envisioning no more than 2 squrts per forward traversal of my robot. If we imagine that the typical desk requires at most 5 forward traversals from start to finish, then we are looking at a maximum of 20 spurts, or 20 ml of liquid. I would like one refill to allow for 5 cleans, so we are looking at a rough estimate of 100 ml of liquid. This will serve as my starting point for the project, and I will change this number if needed. Additionally, because I would like the resevoir to be easily refillable and conform to the limited space I have in my chassis, I have decided to design my own resevoir. 
+
+This comes with issues: won't the precense of liquid risk mold growth in my 3D print, especially if I am using PLA? For the time being, I have decided to mitigate this by committing to a very strong chemical cleaning spray that is naturally anti microbial growth to mitigate this. I will redesign if it soon becomes clear that the resevoir is building up mold. 
+
+**Decision:** A custom designed, 3D printed resevoir with 100ml capacity will be used, with 100ml subject to change later
+
+**DECISION THREE: NOZZLE TYPE**
+
+Finally, I have elected to go with a fan nozzle for maximum coverage. I want the entirety of the cleaning pad to have some of the liquid on it to make sure no gaps are made in cleaning, so I would like to cover most of the 6.5 in chord (maybe 4-5 in of it, give or take), and a fan nozzle will grant me that coverage. To decide on the angle, I will order a few different angles and pick the one I like the most
+
+**Decision:** Fan nozzle to be used for maximum coverage of surface area. Ordering multiple (2-3) angles to decide on the best one. 
+
+**Further Questions:** 
+ - How will the introduction of the resevoir change my weight distribution?
+ - How shall I plan my space so everything manages to fit into my chassis?
+ - Which nozzle size will end up being the right size for me?
+
+
+
 
 
