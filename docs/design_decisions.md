@@ -191,6 +191,13 @@ Finally, I have elected to go with a fan nozzle for maximum coverage. I want the
  - How will the introduction of the resevoir change my weight distribution?
  - How shall I plan my space so everything manages to fit into my chassis?
  - Which nozzle size will end up being the right size for me?
+ 
+ ## Components Wiring Diagram
+ I have drawn an initial components wiring diagram, which can be found in /docs/sketches. Keeping with my 5/29 decision, I am keeping three things plugged into the battery's positive terminal. The diagram includes components such as the Ultrasonic sensor, L293D, two DC motors, and the stepper motor driver and stepper motor, and the IR sensor. I haven't yet figured out the exact setup of the sanitizer, so I will leave that up in the air. 
+
+ This is a really straightforward design decision, but I think the steps that come with this are more interesting. I will be using wokwi to plan out with GPIO pins of the ESP32, and start trying the preliminary code to try and see if it will work. Additionally, I will be getting a Caliper tomorrow, which I will use to finish blocking out the 3D model to make sure I have enough space in the current model to fit all my components. 
+
+ No further questions. 
 
 
 
