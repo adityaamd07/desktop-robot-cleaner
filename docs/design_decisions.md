@@ -192,12 +192,24 @@ Finally, I have elected to go with a fan nozzle for maximum coverage. I want the
  - How shall I plan my space so everything manages to fit into my chassis?
  - Which nozzle size will end up being the right size for me?
  
- ## Components Wiring Diagram
+ ## Components Wiring Diagram -- 7/22
  I have drawn an initial components wiring diagram, which can be found in /docs/sketches. Keeping with my 5/29 decision, I am keeping three things plugged into the battery's positive terminal. The diagram includes components such as the Ultrasonic sensor, L293D, two DC motors, and the stepper motor driver and stepper motor, and the IR sensor. I haven't yet figured out the exact setup of the sanitizer, so I will leave that up in the air. 
 
  This is a really straightforward design decision, but I think the steps that come with this are more interesting. I will be using wokwi to plan out with GPIO pins of the ESP32, and start trying the preliminary code to try and see if it will work. Additionally, I will be getting a Caliper tomorrow, which I will use to finish blocking out the 3D model to make sure I have enough space in the current model to fit all my components. 
 
  No further questions. 
+
+ ## Switch from Power Supply Module -- 7/24
+ I have decided to switch away from the power supply module for my project, and instead switch to a cheap voltage regulator that drops the voltage down to 5V. I have done this for two reasons. The first is that the power supply module is made for breadboards, and I want this project to be on PCB, for permanentability and to learn soldering, so soldering this power supply to a PCB is very difficult. The second reason is that the power supply module is very large, coming in at over 2 inches long. This is a lot of space, which is a very limited resource for me since I have decided to (mostly, I expanded some parts of the chassis) stick to the 7 inch diameter chassis. Thus, it simply makes sense for me to switch to a voltage regulator, which is much smaller, as both its length and width are under one inch. 
+
+ **Decision:** Switch from power supply module to voltage regulator
+
+ **Further Questions:**
+  - Where should I place the voltage regulator to optimize space?
+  - Where should I place ALL components to make efficient use of my space?
+
+  
+
 
 
 
