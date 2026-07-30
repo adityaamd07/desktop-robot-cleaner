@@ -208,7 +208,10 @@ Finally, I have elected to go with a fan nozzle for maximum coverage. I want the
   - Where should I place the voltage regulator to optimize space?
   - Where should I place ALL components to make efficient use of my space?
 
-  
+  ## Reprinting parts - 7/30
+  I have printed the first parts for the robot. I have decided to reprint the sliding arm for the cleaning mechanism, as it was extremely delicate after the first print and snapped. I have doubled the thickness, so hopefully this will last better. Additionally, after some intial testing, I realized there wasn't enough holding the sliding arm into place to truly translate into linear motion. I have redesign the conecting piece to include some support from the bottom of the chassis to ensure that the sliding arm is only moving linearly, and not shifting diagonally 
+
+  **Decision:** Reprinting components of cleaning mechanism to improve functionality of said mechanism 
 
 
 
