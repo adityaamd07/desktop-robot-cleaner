@@ -213,6 +213,11 @@ Finally, I have elected to go with a fan nozzle for maximum coverage. I want the
 
   **Decision:** Reprinting components of cleaning mechanism to improve functionality of said mechanism 
 
+  ## PCB and component mounting 8/4
+  I have started truly soldering, which has been great. One thing I did not anticipate is have a bunch of wires below my PCB for wiring components to my ESP32. Thus, I have decided to design some mounts that would elevate my PCB above the chassis floor, which will allow some space for the wires to flow. This doubles as a space saving mechanism, as this clears up some space on the chassis floor (now below my PCB) for my motors, which previously did not have the space to place. I will spend the rest of this week trying to wire and get as many components on the chassis as possible, and will begin thinking about the sanitizing and code next week. 
+  **Decision:** Designing mounts for the PCB to elevate above the chassis floor, and designing mounts for other electrical components, such as the stepper motor driver and the voltage regulator
+
+
 
 
 
