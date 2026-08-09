@@ -217,6 +217,23 @@ Finally, I have elected to go with a fan nozzle for maximum coverage. I want the
   I have started truly soldering, which has been great. One thing I did not anticipate is have a bunch of wires below my PCB for wiring components to my ESP32. Thus, I have decided to design some mounts that would elevate my PCB above the chassis floor, which will allow some space for the wires to flow. This doubles as a space saving mechanism, as this clears up some space on the chassis floor (now below my PCB) for my motors, which previously did not have the space to place. I will spend the rest of this week trying to wire and get as many components on the chassis as possible, and will begin thinking about the sanitizing and code next week. 
   **Decision:** Designing mounts for the PCB to elevate above the chassis floor, and designing mounts for other electrical components, such as the stepper motor driver and the voltage regulator
 
+## Restarting wiring process - 8/8
+Today, after having soldered my motors and ESP32 to a PCB, I tried to connect my ESP32 to my laptop and failed. This resulted in one, horrifying conclusion: I somehow managed to ruin the usb connection point on my ESP32, thus resulting in windows devices not recognizing the chip. This cannot be proven, but after 3 hours of constant debugging and testing, it is the only conclusion that I can come to, as no solution worked for this. I have thus come to the only solution that I can: restarting. I have ordered a new ESP32 chip, and will spend next week soldering components together to try and complete this project. This is obviously a huge set back in my project, both time and cost-wise. 
+
+This has been a big blow to my morale, but I am going to try my hardest to not let this affect me. While I am waiting for my new board, I have decided to begin development on my firmware. I am planning on using the ESP32 to create a web server where I can send commands from my laptop to the board. This way, I can autonomously command the robot to begin cleaning in the future. I will begin development on both this and basic movement options while I wait for the new components to arrive. 
+
+Because of this set back, I am also quickly running out of time before school starts. Therefore, I have decided to focus on solely a drivable robot that can sweep items. For the time, I will make the sanitizing part of this robot a phase 2 problem, and make phase involve a drivable, sweeping robot. If I move faster than I expect on my schedule, I will adjust accordingly. 
+
+Finally, although this was kind of a downer of a design decision, this does give me the chance to greatly improve upon on how I think about soldering and PCB. For starters, in order to avoid messing up my boards like I did this time, I will be using IC sockets on my PCB, rather than soldering components directly to my PCB. This should avoid connection issues like what happened with this time. Secondly, in my previous design, I left all wire connections beneath the board. This was a grave mistake. It led to a jumbled mess of wires below the board, and made it impossible to even conceive mounting my PCB to the chassis. I will be leaving all my wiring above the board this time. 
+
+**Decision:** Redoing all soldering due to non responsive ESP32. Will iterate, using IC sockets to avoid direct soldering of components, and a more structured approach to wiring, making PCB mounting easy. Will begin to early work on firmware code to speed up process, and moved sanitizing spray to phase 2 to ensure phase 1 completion before summer's end.
+
+**Further Questions:** 
+ - What pins am I going to assign to what components?
+ - Even though it is phase 2, it is worth planning out how I am going to make this robot autonomous now for easy transitions
+ - will I need to reprint the chassis to fit in necessary components?
+ - The ultrasonic sensor sends out 5V signals through its echo pin. Will I need to use resistors to step this down for the ESP32's 3.3V pins? How will this work?
+
 
 
 
