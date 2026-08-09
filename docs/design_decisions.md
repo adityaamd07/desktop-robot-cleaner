@@ -234,6 +234,25 @@ Finally, although this was kind of a downer of a design decision, this does give
  - will I need to reprint the chassis to fit in necessary components?
  - The ultrasonic sensor sends out 5V signals through its echo pin. Will I need to use resistors to step this down for the ESP32's 3.3V pins? How will this work?
 
+ ## Header File Organization + RME Convention -- 8/9
+
+ I began writing .hpp files for controlling my motors and sensors. For these header files, I have decided to document using definied Abstract Functions, Representation Invariants, and definied RMEs **when necessary.** Crucially, I did not want to spend a ridiculous amount of time documenting when that time could be spent coding, so I have decided to always specify an AF and Rep Invariant, whether or not they exist. For general methods, I will either use a comment line describing the method or an RME, depending on what the methods functionality is. I suspect that RME's will not be required until I begin designing my autonomous navigation. 
+
+ **Decision:** Adopt AF and Rep invaraint documentation (or lack therof) in my code, and RME when I feel appropriate
+
+ ## Motor and Sensor Data Representation -- 8/9 
+ 
+ When I was designing on my header files, I came up with two distinct data representations for each case. For the motors, I decided to use an enum class to represent the driving state of the robot, and set up a rep invariant that the current state of the robot must match one of the listed driving states in the enum class. This has a few advantages: there truly are only a select number of states that the robot can drive in, so this helps eliminate undefined robot behavior. Addtionally, this lets me set specific requirements for each state, or perhaphs in between states (like not turning too fast after driving straight or backwards). 
+
+ For the Sensors, I was more conflicted. I considered using a state representation like I did for the motor, where I would continuously store and update the state of each sensor. This would be helpful for autonomous driving, but is a little more complicated to design currently. Therefore, I have decided to simply create a set of boolean functions that translates the sensor data into actioanable items (does floor exist? or is object in front too close?). This simplifies matters for now, which is why I have tentatively decided on this structure. However, this may need to change in the future as I design autonomous travel. 
+
+ **Decision:** State based representation for motor control, and (tentatively) statless representation for sensors, where information is not stored in a vairable, only updated through boolean methods
+
+ **Further Questions:**
+  - Should front and back floor sensors have multiple public methods, or just one public method?
+  - is there ever a scenario where the front and back IR sensors will both read that the floor does 
+    not exist?
+
 
 
 
