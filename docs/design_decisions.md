@@ -253,7 +253,30 @@ Finally, although this was kind of a downer of a design decision, this does give
   - is there ever a scenario where the front and back IR sensors will both read that the floor does 
     not exist?
 
-  
+## Pinout Assignment -- 8/10
+I have decided on and assigned pins of the ESP32 to be wired to the various motor drivers and sensors. The list is as follows: 
+ - L293D
+    - 25, 26 --> Left Motor Input pins
+    - 32 --> Left Motor Speed Control
+    - 27, 14 --> Right Motor Input pins
+    - 33 --> Right Motor Speed Control
+  - Ultrasonic Sensor
+    - 18 --> Trig Pin
+    - 19 --> Echo Pin
+  - IR Sensor
+    - 16 --> front IR sensor digital pin
+    - 17 --> back IR sensor digital pin
+  - Stepper Motor 
+    - 4, 13, 21, 23, --> IN1, 2, 3, and 4 respectively. 
+
+These pins were chosen in accordance with an ESP32 pinout I saw, and I tried to choose the safest pins I saw for the task at hand. 
+
+**Decision:** ESP32 pins assigned as above
+
+**Further Questions:**
+  - Will I have enough ESP32 pins to wire another L293D for the submersible motor for the spraying mechanism in Phase 2
+
+
 
 
 

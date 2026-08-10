@@ -3,18 +3,19 @@ The goal of this project is for myself, a rising sophomore mechanical engineerin
 
 ## Phase one: Robot driving mechanism
 
-The goal of this phase is to create a fully functioning drivable robot with a sweeping mechanism and a nozzle to spray out cleaning solution. The robot should be able to drive in all four cardinal directions with human input, and should be able to turn the sweeping mechanism and the spray on and off with human input. 
+The goal of this phase is to create a fully functioning drivable robot with a sweeping mechanism a. The robot should be able to drive in all four cardinal directions with human input, and should be able to turn the sweeping mechanism with human input. 
 
 **Status:** ongoing 
 
-## Phase twogit : Autonomous driving
+## Phase two: Autonomous driving and spraying mechanism
 
-This phase will involve fully designing and testing my autonomous driving system. I will consider this phase, and therefore the project, a success if the robot can autonomously sweep and sanitize the surface without falling off the edge of the desk, crashing, stopping for a super prolonged period of time, or crashing into any of the objects on the surface. 
+This phase will involve fully designing and testing my autonomous driving system, and adding the spraying mechanism to my robot. I will consider this phase, and therefore the project, a success if the robot can autonomously sweep and sanitize the surface without falling off the edge of the desk, crashing, stopping for a super prolonged period of time, or crashing into any of the objects on the surface. 
 
 **Status:** not started
 
 ## Repo Structure: 
 - docs
+    - media: For all photos and vidoes I take during the project
     - sketches: a folder of all planning sketches I do for this project. To me, a planning sketch is one that I do simply to view an overall layout. Crucially, it does NOT have any dimensions. 
     - design_decisions: A log of decisions made throughout this project, including the rationale behind these decisions
     - materials purchased: a bill of all things bought for this project in order to keep tally of budget
@@ -23,7 +24,13 @@ This phase will involve fully designing and testing my autonomous driving system
 - hardware: 
     - Chassis: all CAD models or engineering drawings including the full robot chassis
     - cleaning mechanism: all CAD models or engineering drawings/reasonings relating to the cleaning mechanism
-- more to come!
+- firmware: Used platformio in VSCODE
+    - include: contains headerfiles
+    - lib: any imported libraries
+    - src: all source code
+    - test: any test code
+    - pio/build: ESP32 files preloaded by platformio
+    - vscode: json files preloaded by vscode
 
 **(Self-Imposed) Phase 1 Deadline:** August 30th (The day before classes start)
 **Current Project Status:** Designing robot chassis, cleaning mechanism, and electrical components layout
