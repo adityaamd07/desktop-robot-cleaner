@@ -253,6 +253,8 @@ Finally, although this was kind of a downer of a design decision, this does give
   - is there ever a scenario where the front and back IR sensors will both read that the floor does 
     not exist?
 
+  
+
 
 
 
