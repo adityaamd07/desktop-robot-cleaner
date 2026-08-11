@@ -276,6 +276,12 @@ These pins were chosen in accordance with an ESP32 pinout I saw, and I tried to 
 **Further Questions:**
   - Will I have enough ESP32 pins to wire another L293D for the submersible motor for the spraying mechanism in Phase 2
 
+## ESP32 mount adjustment -- 8/11/2026
+
+With my new order of an ESP32, I also acquired a socket board with screw on terminals for the ESP32. While I am happy with this decision, it did come at one glaring cost. The size of the socket board is much larger than anticipated, so I will need to compensate. I originally had printed some mounts to elevate my ESP32, but now that height is no longer enough, as the ESP32 in the socket board would slope due to the battery interfering. Therefore, I have decided on the simplest fix of elevating my ESP32 more, higher than battery so it can sit flat on these new mounts. I will, therefore have to redesign the mounts in question to make them even higher, but this should resolve this issue. 
+
+**Decision:** Elevate new socket board with screw terminals higher than before, above the battery on the chassis so that it sits flat. 
+
 
 
 

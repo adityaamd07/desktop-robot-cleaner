@@ -1,31 +1,17 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+#include "driver_motor_controls.hpp"
+#include "sensor_controls.hpp"
+#include "stepper_motor_controls.hpp"
+#include "web_server.hpp"
 
-int motor_one_input_one = 21;
-int motor_one_input_two = 22;
+
 
 void setup() {
-pinMode(motor_one_input_one, OUTPUT);
-pinMode(motor_one_input_two, OUTPUT);
+
 }
 
 void loop() {
- 
-digitalWrite(motor_one_input_one, HIGH);
-digitalWrite(motor_one_input_two, HIGH);
-
-delay(5000);
-
-digitalWrite(motor_one_input_one, LOW);
-digitalWrite(motor_one_input_two, LOW);
-
-delay(5000);
 
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
