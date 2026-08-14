@@ -282,6 +282,24 @@ With my new order of an ESP32, I also acquired a socket board with screw on term
 
 **Decision:** Elevate new socket board with screw terminals higher than before, above the battery on the chassis so that it sits flat. 
 
+## Stepper Motor Firmware Architecture -- 8/14/26
+
+Today I moved off the Arduino Stepper library entirely for driving the cleaning mechanism's set up. The library's step() call is blocking and doesn't return until the full commanded rotation finishes, which interrupts all other ESP32 functions. This would ruin my Phase one goal of a WIFI controlled robot, so I replaced it with a hand-rolled half-step driver. I used an 8-row lookup table of pin states, and a function that advances through the table and writes the four IN pins directly. This gives full control over timing, allowing components to operate essentially simultaneously. 
+
+I also restructured the cleaning mechanism using three states: SWEEPING, RESETTING, STOPPED. Each state is triggered by an explicit public method (start_sweep(), reset(), stop()), and the per-loop sweep function reacts to whatever state is currently active. This ensures nothing is blocked from running, while cleanly interacting with my idea for an implementation of the web server.
+
+While building this, I confirmed by hand-spinning the mechanism that a full 0-360 degree rotation of the stepper motor is not possible: something in the way I printed and assembled the mechanism only allows for 0-180 degree rotation. Rather than spend my time figuring out what the physical blockage is that is preventing the alst 180 degrees of rotation, I shifted my software to have my stepper act as a servo: oscillating between 0 and 180 degres, which still allows for the full stroke length to be travelled by the mechanism. As a safety margin against the jam I confirmed by hand, I capped the sweep range at 172° rather than the full 180°, applied evenly through the stroke. 
+
+I breifly considered adding an encoder to my stepper motor to hard code in a initial starting position each time the robot resets. I have decided to pause this for now. For getting my initial prototype built, I have deemed an encoder unnecessary, so I will defer that decision to a later date, after this first prototype has been up and running and the 
+
+**Decision:** Hand-rolled non-blocking half-step driver replacing the Stepper library; three-state (SWEEPING/RESETTING/STOPPED) architecture with explicit trigger methods; bounded 0°–172° oscillation confirmed safe by hand-testing; hardware homing deferred to Phase 2/3 chassis rebuild.
+
+Further Questions:
+
+How will the stepper's non-blocking pattern extend to the DC drive motors and future sensor polling — same millis()-gated approach per subsystem?
+Once the webserver is running, does the actual physical sweep timing (interval = 2ms/step) feel right, or does it need tuning after seeing it move on the breadboard?
+When I do add a tactile-button endstop later, does it change anything about the current current_position/RESETTING logic, or does it just add a new state/trigger on top?
+
 
 
 
