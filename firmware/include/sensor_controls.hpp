@@ -4,6 +4,7 @@
 #include <Arduino.h>
 
 
+
 //Pin Definitions
 #define ULTRASONIC_TRIG 18
 #define ULTRASONIC_ECHO 19
@@ -33,11 +34,12 @@ class sensor_controls{
     private: 
 
         
-        double ultrasonic_distance();//returns current distance reading of an object
+        float ultrasonic_distance();//returns current distance reading of an object
         bool does_floor_exist_front(); //returns front reading of IR sensor
         bool does_floor_exist_back(); // return back sensor of IR sensor
         const int threshold = 5; //threshold for when an object is too close for 
-                                 //ultrasonic sensor
+                                 //ultrasonic sensor (in cm)
+
 
 };
 #endif

@@ -16,12 +16,14 @@ void driver_motor_controls :: begin() {
     ledcSetup(MOTOR_RIGHT_SPEED_CHANNEL, 5000, 8);
     ledcAttachPin(MOTOR_RIGHT_SPEED, MOTOR_RIGHT_SPEED_CHANNEL);
 
+    ledcWrite(MOTOR_LEFT_SPEED_CHANNEL, 255);
+    ledcWrite(MOTOR_RIGHT_SPEED_CHANNEL, 255);
 }
 drive_state driver_motor_controls :: get_state () {
     return current_state;
 }
 
-void driver_motor_controls :: forward () {
+void driver_motor_controls :: forward() {
 
     current_state = drive_state :: FORWARD;
     //LEFT MOTOR CONTROLS
@@ -34,7 +36,7 @@ void driver_motor_controls :: forward () {
 
 }
 
-void driver_motor_controls :: backward () {
+void driver_motor_controls :: backward() {
 
 
     current_state = drive_state :: BACKWARD;
@@ -49,7 +51,34 @@ void driver_motor_controls :: backward () {
 
 }
 
-void driver_motor_controls :: stop () {
+void driver_motor_controls :: turn_left() {
+
+    current_state = drive_state :: TURNING_LEFT;
+
+    //LEFT MOTOR
+    digitalWrite(MOTOR_LEFT_INP_ONE, LOW);
+    digitalWrite(MOTOR_LEFT_INP_TWO, LOW);
+
+    //RIGHT MOTOR
+    digitalWrite(MOTOR_RIGHT_INP_ONE, HIGH);
+    digitalWrite(MOTOR_RIGHT_INP_TWO, LOW);
+
+}
+
+void driver_motor_controls :: turn_right() {
+
+    current_state = drive_state :: TURNING_RIGHT;
+
+    //LEFT MOTOR
+    digitalWrite(MOTOR_LEFT_INP_ONE, HIGH);
+    digitalWrite(MOTOR_LEFT_INP_TWO, LOW);
+
+    //RIGHT MOTOR
+    digitalWrite(MOTOR_RIGHT_INP_ONE, LOW);
+    digitalWrite(MOTOR_RIGHT_INP_TWO, LOW);
+
+}
+void driver_motor_controls :: stop() {
 
     current_state = drive_state :: STOPPED;
 
@@ -60,4 +89,8 @@ void driver_motor_controls :: stop () {
     //RIGHT MOTOR 
     digitalWrite(MOTOR_RIGHT_INP_ONE, LOW);
     digitalWrite(MOTOR_RIGHT_INP_TWO, LOW);
+}
+
+drive_state driver_motor_controls :: get_state() {
+    return current_state;
 }
