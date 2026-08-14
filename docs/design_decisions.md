@@ -290,7 +290,7 @@ I also restructured the cleaning mechanism using three states: SWEEPING, RESETTI
 
 While building this, I confirmed by hand-spinning the mechanism that a full 0-360 degree rotation of the stepper motor is not possible: something in the way I printed and assembled the mechanism only allows for 0-180 degree rotation. Rather than spend my time figuring out what the physical blockage is that is preventing the alst 180 degrees of rotation, I shifted my software to have my stepper act as a servo: oscillating between 0 and 180 degres, which still allows for the full stroke length to be travelled by the mechanism. As a safety margin against the jam I confirmed by hand, I capped the sweep range at 172° rather than the full 180°, applied evenly through the stroke. 
 
-I breifly considered adding an encoder to my stepper motor to hard code in a initial starting position each time the robot resets. I have decided to pause this for now. For getting my initial prototype built, I have deemed an encoder unnecessary, so I will defer that decision to a later date, after this first prototype has been up and running and the 
+I breifly considered adding an encoder to my stepper motor to hard code in a initial starting position each time the robot resets. I have decided to pause this for now. For getting my initial prototype built, I have deemed an encoder unnecessary, so I will defer that decision to a later date, after this first prototype has been up and running. 
 
 **Decision:** Hand-rolled non-blocking half-step driver replacing the Stepper library; three-state (SWEEPING/RESETTING/STOPPED) architecture with explicit trigger methods; bounded 0°–172° oscillation confirmed safe by hand-testing; hardware homing deferred to Phase 2/3 chassis rebuild.
 
