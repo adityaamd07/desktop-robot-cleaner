@@ -1,5 +1,6 @@
 #ifndef DRIVER_MOTOR_CONTROLS_HPP
 #define DRIVER_MOTOR_CONTROLS_HPP
+#include "types.hpp"
 
 #include <Arduino.h> 
 
@@ -14,8 +15,6 @@
 #define MOTOR_LEFT_SPEED_CHANNEL 0
 #define MOTOR_RIGHT_SPEED_CHANNEL 1
 
-//possible drive states for robot
-enum class drive_state {STOPPED, FORWARD, BACKWARD, TURNING_LEFT, TURNING_RIGHT };
 
 /**
  * driver_motor_controls represents the two wheel differential of the desktop cleaner robot. 

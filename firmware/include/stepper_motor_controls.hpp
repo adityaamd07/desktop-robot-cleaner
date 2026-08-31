@@ -2,6 +2,7 @@
 #define STEPPER_MOTOR_CONTROLS_HPP
 
 #include <Arduino.h>
+#include "types.hpp"
 
 
 //PIN DEFINITIONS
@@ -10,7 +11,6 @@
 #define IN3 21
 #define IN4 23
 
-enum class sweep_state {SWEEPING, STOPPED, RESETTING};
 
 
 /**

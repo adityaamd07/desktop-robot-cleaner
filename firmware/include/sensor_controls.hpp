@@ -28,9 +28,11 @@ class sensor_controls{
         //sets GPIO pins defined above as input pins
         void begin();
 
-        bool is_obj_close();
+        bool is_obj_close(); // returns true if an object is within a threshold,
+                             // uses ultrasonic sensor for reading
 
-        bool does_floor_exist();
+        bool does_floor_exist(); // Uses both front and back private methods to determine
+                                 // if the floor exists below the robot. 
     private: 
 
         

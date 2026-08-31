@@ -1,6 +1,7 @@
 #include "driver_motor_controls.hpp"
 
 
+
 driver_motor_controls :: driver_motor_controls() : current_state(drive_state::STOPPED) {}
 
 void driver_motor_controls :: begin() {
@@ -18,9 +19,6 @@ void driver_motor_controls :: begin() {
 
     ledcWrite(MOTOR_LEFT_SPEED_CHANNEL, 255);
     ledcWrite(MOTOR_RIGHT_SPEED_CHANNEL, 255);
-}
-drive_state driver_motor_controls :: get_state () {
-    return current_state;
 }
 
 void driver_motor_controls :: forward() {
