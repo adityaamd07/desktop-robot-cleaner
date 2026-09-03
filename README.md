@@ -1,17 +1,24 @@
 # desktop-robot-cleaner
-The goal of this project is for myself, a rising sophomore mechanical engineering student, to create a fully autonomous desktop robot that is able sweep and sanitize a smooth, rectangular surface in one pass. This is obviously very ambitious for someone with zero experience in design or electronics. Although I have experience in C++, this will still prove to be a challenge. Thus, I have divided this project into two seperate phases, each with its own goals.
+The goal of this project is for myself, a rising sophomore mechanical engineering student, to create a desktop cleaning with autonomous capabilities. The individual goals and markers of this project have changed quite a bit since its inception in May, but I have learned quite a bit by doing this and it has been a lot of fun!
 
-## Phase one: Robot driving mechanism
+**Project Status:** In progress: 
 
-The goal of this phase is to create a fully functioning drivable robot with a sweeping mechanism a. The robot should be able to drive in all four cardinal directions with human input, and should be able to turn the sweeping mechanism with human input. 
+## Project accomplishments, current happenings, and future goals 
+Since the project's start I have done the following: 
+- Designed and fabricated a 7" circular chassis, ensuring that the chassis is able to fit tight space constraints between all components
+- Designed a Scotch Yoke mechanism to move a cleaning pad back and forth, effectively sweeping areas. 
+- Selected the proper materials, including chassis make, sensors, motors, and main chip driving performance
+- Breadboard tested and permanently soldered components, utilizing IC sockets, screw terminals, and multmeter testing to ensure connectivity. 
+- Designed a C++ firmware architecture using PlatformIO to have manual drive and sweeping capabilities
 
-**Status:** ongoing 
+I am currently doing the follwing: 
+- Attempting to synthesize C++ firmware, physical mechanisms, and electrical components together in one working system. 
 
-## Phase two: Autonomous driving and spraying mechanism
+Future Goals/Ideas: 
+- Redesign chassis to be a 7"x 7" square, which will result in better use of space as many components are rectangular in nature
+- Add a IMU + encoders to drive and stepper motors, utilizing odometry concepts to allow for autonomous capabilities. 
+- Introduce a spray mechanism so the robot can sanitize a surface and sweep it in one pass. 
 
-This phase will involve fully designing and testing my autonomous driving system, and adding the spraying mechanism to my robot. I will consider this phase, and therefore the project, a success if the robot can autonomously sweep and sanitize the surface without falling off the edge of the desk, crashing, stopping for a super prolonged period of time, or crashing into any of the objects on the surface. 
-
-**Status:** not started
 
 ## Repo Structure: 
 - docs
@@ -32,8 +39,6 @@ This phase will involve fully designing and testing my autonomous driving system
     - pio/build: ESP32 files preloaded by platformio
     - vscode: json files preloaded by vscode
 
-**(Self-Imposed) Phase 1 Deadline:** August 30th (The day before classes start)
-**Current Project Status:** Designing robot chassis, cleaning mechanism, and electrical components layout
 
 
 
