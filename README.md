@@ -12,11 +12,14 @@ Since the project's start I have done the following:
 - Designed a C++ firmware architecture using PlatformIO to have manual drive and sweeping capabilities
 
 I am currently doing the follwing: 
-- Attempting to synthesize C++ firmware, physical mechanisms, and electrical components together in one working system. 
+- Attempting to synthesize C++ firmware, physical mechanisms, and electrical components together in one working system 
+  by using the ESP32's bluetooth capabilities to handle manual driving and sweeping
 
 Future Goals/Ideas: 
 - Redesign chassis to be a 7"x 7" square, which will result in better use of space as many components are rectangular in nature
-- Add a IMU + encoders to drive and stepper motors, utilizing odometry concepts to allow for autonomous capabilities. 
+- Add autonomous capabilities
+    - IMU + Encoders? 
+    - Something else??
 - Introduce a spray mechanism so the robot can sanitize a surface and sweep it in one pass. 
 
 
