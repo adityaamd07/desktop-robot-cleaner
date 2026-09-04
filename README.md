@@ -1,7 +1,7 @@
 # desktop-robot-cleaner
 The goal of this project is for myself, a rising sophomore mechanical engineering student, to create a desktop cleaning with autonomous capabilities. The individual goals and markers of this project have changed quite a bit since its inception in May, but I have learned quite a bit by doing this and it has been a lot of fun!
 
-**Project Status:** In progress: 
+**Project Status:** In progress
 
 ## Project accomplishments, current happenings, and future goals 
 Since the project's start I have done the following: 
@@ -11,7 +11,7 @@ Since the project's start I have done the following:
 - Breadboard tested and permanently soldered components, utilizing IC sockets, screw terminals, and multmeter testing to ensure connectivity. 
 - Designed a C++ firmware architecture using PlatformIO to have manual drive and sweeping capabilities
 
-I am currently doing the follwing: 
+I am currently doing the following: 
 - Attempting to synthesize C++ firmware, physical mechanisms, and electrical components together in one working system 
   by using the ESP32's bluetooth capabilities to handle manual driving and sweeping
 
